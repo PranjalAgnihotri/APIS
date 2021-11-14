@@ -82,5 +82,5 @@ celery -A app_name worker -l info
 
 celery -A app_name beat -l info
 
-# Need to check YOUTUBE_API_KEYS and query to extract data
+
 
