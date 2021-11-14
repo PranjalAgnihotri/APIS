@@ -8,12 +8,6 @@ To make an API to fetch latest videos sorted in reverse chronological order of t
 - Dockerize the project.
 - It should be scalable and optimised.
 
-# References
-- YouTube data v3 API: [https://developers.google.com/youtube/v3/getting-started](https://developers.google.com/youtube/v3/getting-started)
-- Search API reference: [https://developers.google.com/youtube/v3/docs/search/list](https://developers.google.com/youtube/v3/docs/search/list)
-    - To fetch the latest videos you need to specify these: type=video, order=date, publishedAfter=<SOME_DATE_TIME>
-    - Without publishedAfter, it will give you cached results which will be too old
-
 # Database configuration
 python3 -m venv env
 
@@ -90,4 +84,3 @@ celery -A app_name beat -l info
 
 # Need to check YOUTUBE_API_KEYS and query to extract data
 
-# adding postman collection for url and payload definition : https://www.getpostman.com/collections/1573e12927edce8631a6
